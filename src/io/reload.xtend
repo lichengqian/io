@@ -9,7 +9,7 @@ import java.util.Map
 import com.google.common.collect.Lists
 
 interface PollingNotify<T> {
-	def T createObject(File file)
+	def T    createObject(File file)
     def void onAdd(String path, T obj)
     def void onDelete(String path, T obj)
     def void onChange(String path, T oldValue, T newValue)
